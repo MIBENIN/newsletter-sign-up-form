@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <main>
+    <section class="form-section" id="form-section">
+      <div class="img-div">
+        <picture>
+          <source media="(min-width:580px)" srcset="./assets/images/illustration-sign-up-desktop.svg"
+            class="desktop-img">
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" class="mobile-img">
+        </picture>
+      </div>
+
+      <div class="content-div">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li><span>Product discovery and building what matters</span></li>
+          <li><span>Measuring to ensure updates are a success</span></li>
+          <li><span>And much more!</span></li>
+        </ul>
+        <form action="#">
+          <div class="label-error-div">
+            <label for="Email">Email Address</label>
+            <p id="error-msg">Valid Email Required</p>
+          </div>
+          <input type="email" name="Email" id="Email" placeholder="email@company.com">
+          <input type="submit" id="Submit" value="Subscribe to monthly newsletter" class="submit-btn">
+        </form>
+      </div>
+    </section>
+    <section class="thankyou-section" id="thankyou-section">
+      <div>
+        <img src="./assets/images/icon-success.svg" alt="" class="success-img">
+        <h2 class="thankyou-title">Thanks for subscribing!</h2>
+        <p class="thankyou-msg">A confirmation email has been sent to <span id="user-mail">ash@loremcompany.com.</span>
+          Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <button type="button" class="dismiss-btn" id="dismiss-btn">Dismiss message</button>
+    </section>
+  </main>
+  <!-- Sign-up form start -->
+
+  <!-- Stay updated!
+
+  Join 60,000+ product managers receiving monthly updates on:
+
+  Product discovery and building what matters
+  Measuring to ensure updates are a success
+  And much more!
+
+  Email address
+  email@company.com
+
+  Subscribe to monthly newsletter -->
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+  <!-- Success message end -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
